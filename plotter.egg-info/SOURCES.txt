@@ -1,0 +1,5 @@
+setup.py
+plotter.egg-info/PKG-INFO
+plotter.egg-info/SOURCES.txt
+plotter.egg-info/dependency_links.txt
+plotter.egg-info/top_level.txt
