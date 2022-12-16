@@ -15,7 +15,6 @@ x = int(len(mylist)/2)
 print(type(x))
 
 while  mylist[x] != findVar and x != 0: 
-        print ("loop ", x)
         if mylist[x] < findVar:
                 print ("go up")
                 x = int((x+len(mylist))/2)
