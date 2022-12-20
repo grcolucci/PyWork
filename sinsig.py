@@ -13,7 +13,7 @@ freqSlider = 0
 def show_values():
 
         timeCnt = 0.0
-        ampInd = 3.6 # ampSlider.get()
+        ampInd = ampSlider.get()
         freqInd = freqSlider.get()
         for x in range(len(signalArray)):
                 timeArray[x] = timeCnt
@@ -34,10 +34,11 @@ def show_values():
 
 
 master = Tk()
-ampSlider = Scale(master, from_=0.0, to=10.0, length=400, tickinterval=0.02, orient=HORIZONTAL)
+#Scale(frame, from_=0.55, to=4.75, digits = 3, resolution = 0.01, label = "Lower")
+ampSlider = Scale(master, from_=0.00, to=10.2, digits=3, resolution = 0.01, label="Amplitude", length=800, tickinterval=0.02, orient=HORIZONTAL)
 ampSlider.set(3.6)
 ampSlider.pack()
-freqSlider = Scale(master, from_=0, to=250, length=800, tickinterval=10, orient=HORIZONTAL)
+freqSlider = Scale(master, from_=0, to=250, length=800, tickinterval=10, label="Frequency", orient=HORIZONTAL)
 freqSlider.set(50)
 freqSlider.pack()
 Button(master, text='Show', command=show_values).pack()
