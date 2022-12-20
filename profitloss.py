@@ -1,4 +1,4 @@
-
+import numpy as np
 bList = []
 sList = []
 number1 = input("Enter number and hit enter ")
